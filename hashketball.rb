@@ -220,7 +220,7 @@ def most_points_scored
       if contents.is_a?(Hash)
         contents.each do |name, stats|
           stats.each do |statistic, value|
-            if statistic == :points && statistic > max_points
+            if statistic == stats[:points] && statistic > max_points
               binding.pry
             end 
           end
