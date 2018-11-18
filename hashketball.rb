@@ -221,7 +221,8 @@ def most_points_scored
         contents.each do |name, stats|
           stats.each do |statistic, value|
             if statistic == stats[:points] && statistic > max_points
-              binding.pry
+                player_name = name
+                max_points = statistic
             end 
           end
         end
